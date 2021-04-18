@@ -65,6 +65,3 @@ def parse_darab(filepath, outpath=None, with_units=True):
         return df.apply(pd.to_numeric, errors="coerce").fillna(df)
     except:
         return data
-
-
-parse_darab("C:\\Users\\Aditya\\Desktop\\data.txt", with_units=False)
